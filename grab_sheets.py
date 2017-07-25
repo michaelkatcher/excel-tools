@@ -21,7 +21,7 @@ from openpyxl import load_workbook
 
 def date_from_file_name(file_name, return_datetime=False):
     """
-    Return full date as a string from a date in a filename.
+    Return full date as a string or datetime from a date in a filename.
 
     Args:
         file_name (str): Formatted as: Trade E-mail Archive - yyyy.mm.dd.xlsm
