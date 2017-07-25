@@ -4,7 +4,7 @@ Date: 07/24/2017
 Desc: A script to solve the following problem:
 
     Background:     A folder with an .xlsm for each trading day
-                    In each file is a tab called 'SOTER'
+                    In each file is a data tab with the same name
 
     Requirement:    Collect all the tabs for a given date range
                     and save them in a single workbook with one
@@ -75,10 +75,10 @@ class OutputWorkbook(Workbook):
 
 def main():
     # Initial setup variables avoid excessive blank lines
-    data_folder = 'N:\\Shares\\TA\\MF & M3\\Trade Email\\' # Folder containing the input files
+    data_folder = 'N:\\~~~\\Trade Email\\' # Folder containing the input files
     start_date = datetime(2017,07,01) # The date of the first file you want to import
     end_date = datetime.now() # The date of the last file you want to import
-    sheet_name = 'SOTER' # The sheet name we're looking for in each inpupt file
+    sheet_name = 'Data' # The sheet name we're looking for in each inpupt file
     save_path = 'H:\\Test.xlsx' # The path of the output file
 
     # Generate list of filenames
