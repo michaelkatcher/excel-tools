@@ -12,12 +12,15 @@ Requirement:
 - Copy all the tabs for a given date range into a single workbook with 
 one tab for each date
 
-Functions:
-- def date_from_file_name: Return full date as a string or datetime from a date in a filename
-- def copy_worksheet: Copy values from one openpyxl Worksheet to another
+## grab_sheets_pandas.py
 
-Classes:
-- class OutputWorkbook(Workbook): An extension of the openpyxl Workbook class to add a context manager
+Background:
+- A folder with an .xlsm for each trading day
+- In each file are various data tabs, identical in each file
+- Goal was to extend functionality of grab_sheets.py and practice using pandas
 
+Requirement:
+- Copy a filtered, grouped slice of data for a given date range into a single csv file
+- Have the option of merely updating the existing data instead of replacing all each time
 
 
